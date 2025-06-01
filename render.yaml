@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: telegram-reel-bot
+    env: python
+    buildCommand: ""
+    startCommand: ./start.sh
+    plan: free
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
